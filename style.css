@@ -109,4 +109,7 @@ img {
     display: flex;
     justify-content: space-around;
   }
+  .msgContainer{
+    margin-top: 20px;
+  }
 }
