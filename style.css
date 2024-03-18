@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 100vw;
+  background-color: #081b81;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choice {
+  width: 100%;
+  margin: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 5px black groove;
+  object-fit: cover;
+}
+
+.choices:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+}
+
+.score {
+  margin: 0% 05% 1% 5%;
+  width: 20vw;
+  height: 3rem;
+  background-color: aqua;
+  border: 3px black groove;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.msgContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#msg {
+  width: 20vw;
+  height: 3rem;
+  background-color: bisque;
+  border: red 3px solid;
+  border-radius: 5px;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#compScore {
+  font-size: 25px;
+}
+
+#userScore {
+  font-size: 25px;
+}
+@media only screen and (max-width: 770px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .choice {
+    display: flexbox;
+    flex-direction: column;
+    margin: 0px;
+  }
+  #msg {
+    width: 200px;
+    height: 40px;
+  }
+  .score{
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    height: 2rem;
+    line-height: 2rem;
+  }
+  .scoreBoard{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+}
